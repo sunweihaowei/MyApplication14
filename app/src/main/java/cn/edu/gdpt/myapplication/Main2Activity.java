@@ -21,6 +21,7 @@ import okhttp3.Response;
 public class Main2Activity extends AppCompatActivity {
     //笔记网络获取问题
     //犯的错误，直接在什么上面的网站上拿到api结果，他不给数据
+    //易源接口
     private TextView sumBoxOffice;
     private TextView boxOffice;
     private TextView percent;
