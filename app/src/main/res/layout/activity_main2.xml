@@ -9,30 +9,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/sumBoxOffice"/>
-        <TextView
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:text="今日实时"/>
+            <TextView
+                android:id="@+id/tv_sumBoxOffice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000.0"
+                android:textSize="40dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="万"/>
+        </LinearLayout>
+        <ListView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/boxOffice"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/percent"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/name"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/rank"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/showDay"/>
+            android:layout_weight="1"
+            android:id="@+id/lv"></ListView>
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
